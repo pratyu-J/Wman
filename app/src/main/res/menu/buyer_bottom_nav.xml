@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_buy"
+        android:title="Home"
+        android:icon="@drawable/home_selector"
+        android:orderInCategory="100"
+        />
+    <item android:id="@+id/categories_buy"
+        android:title="categories"
+        android:orderInCategory="200"
+        android:icon="@drawable/category_selector"/>
+
+    <item android:id="@+id/saved"
+        android:title="Saved"
+        android:orderInCategory="300"
+        android:icon="@drawable/saved_selector"/>
+
+
+    <item android:id="@+id/profile_buy"
+        android:title="profile"
+        android:orderInCategory="400"
+        android:icon="@drawable/profile_selector"/>
+
+</menu>

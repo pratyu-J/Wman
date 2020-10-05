@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Wman</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, sed diam voluptua.</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="something_went_wrong"> Something Went Wrong</string>
+    <string name="verification_code">Enter the 4 digit verification code sent to your email address</string>
+    <string name="enter_email">Enter the Email associated with your account</string>
+    <string name="categories">Categories</string>
+    <string name="buyer">Buyer</string>
+    <string name="seller">Seller</string>
+    <string name="register">Register</string>
+    <string name="login">Log In</string>
+    <string name="get_approval">Get Approval</string>
+    <string name="continu">Continue</string>
+    <string name="back">Back</string>
+</resources>

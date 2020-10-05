@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GalleryFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/rlayout1">
+
+       <com.google.android.material.appbar.AppBarLayout
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:background="@drawable/grey_outline">
+
+           <androidx.appcompat.widget.Toolbar
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/toolbar">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="20dp"
+                       android:layout_centerVertical="true"
+                       android:id="@+id/closegal"
+                       android:src="@drawable/cross_btn"
+                       app:tint="@color/black" />
+                   
+                   <Spinner
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/spinner_directory"
+                       android:layout_marginStart="5dp"
+                       android:layout_toRightOf="@+id/closegal"
+                       android:layout_toLeftOf="@+id/next_txt"
+                       android:layout_centerVertical="true"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:text="next"
+                       android:textSize="20dp"
+                       android:layout_alignParentRight="true"
+                       android:textColor="@color/black"
+                       android:layout_marginEnd="25dp"
+                       android:layout_marginLeft="5dp"
+                       android:id="@+id/next_txt"/>
+                   
+               </RelativeLayout>
+           </androidx.appcompat.widget.Toolbar>
+       </com.google.android.material.appbar.AppBarLayout>
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_below="@id/rlayout1">
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/galleryImg"
+                android:scaleType="centerCrop"/>
+            
+            <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/progressbar1"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:id="@+id/gridview"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4"
+            tools:listitem="@layout/gridview_layout"
+            android:gravity="center"
+            android:layout_marginTop="1dp"/>
+
+            
+    </LinearLayout>
+
+
+</RelativeLayout>

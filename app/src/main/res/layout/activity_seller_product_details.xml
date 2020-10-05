@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SellerProductDetailsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_black"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Product"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_feather_camera"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+<FrameLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/grey_outline"
+    android:layout_height="wrap_content">
+
+    <com.asura.library.views.PosterSlider
+        android:id="@+id/poster_slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:defaultIndicator="circle"
+        app:imageSlideInterval="5000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:hideIndicators="true"
+        app:loopSlides="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+
+        <ImageButton
+            android:id="@+id/add_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_images"
+            android:background="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add images and videos of your product"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/add_img_btn"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+</FrameLayout>
+
+    <Button
+        android:id="@+id/upload_image"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/dark_blue_btn"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/product_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:hint="Add Description of your product"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Category"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_outline"
+        >
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/get_approval"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Get Approval"
+        android:textAllCaps="false"
+        android:background="@drawable/dark_blue_btn"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

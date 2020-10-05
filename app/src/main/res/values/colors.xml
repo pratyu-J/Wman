@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="splashScreen">#AFD2E4</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#ada7a6</color>
+    <color name="gray">#444444</color>
+    <color name="red">#dc472c</color>
+    <color name="mudy_yellow">#dec100</color>
+    <color name="shinny_blue">#3dd6f5</color>
+    <color name="green">#5ad17a</color>
+    <color name="light_grey">#D8D7D7</color>
+    <color name="lightlightgrey">#AB7E7D7D</color>
+    <color name="referBehindGrey">#F7F8FC</color>
+    <color name="orange">#F6740A</color>
+    <color name="grey_medium">#757575</color>
+    <color name="translucent">#D2FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0b63fb</color>
+    <color name="dark_blue">#3b5998</color>
+    <color name="android_blue">#0c44bc</color>
+    <color name="profile_back">#26214A</color>
+    <color name="blacktrans"></color>
+</resources>

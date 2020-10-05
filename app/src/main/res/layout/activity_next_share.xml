@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.NextShareActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/share_image"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+            android:src="@drawable/peacock_chair"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/share_image"
+            android:id="@+id/caption"
+            android:hint="Write product Description"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tag_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tag People"
+        android:clickable="true"
+        android:padding="10dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/grey_outline"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/add_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add location"
+        android:clickable="true"
+        android:padding="10dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/grey_outline"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price of your product"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/share_price"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:tag="Rs"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/grey_outline"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/get_approval"
+            android:textColor="@color/white"
+            android:background="@drawable/dark_blue_btn"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
