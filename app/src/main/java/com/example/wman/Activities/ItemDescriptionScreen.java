@@ -2,6 +2,7 @@ package com.example.wman.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,16 +14,19 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.wman.Classes.BuyerProductsClass;
 import com.example.wman.R;
+
+import static com.example.wman.Activities.MyCartActivity.cartItems;
 
 public class ItemDescriptionScreen extends AppCompatActivity {
 
-    ImageView imageView, backBtn;
+    ImageView imageView, backBtn, cartBtn;
     TextView productName, productPrice, description;
     RatingBar ratingBar;
     Button addToCart;
     Spinner qty;
-
+    String name, image, price;
    String[] quantity = {"Select Quantity","1","2","3","4"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,36 @@ public class ItemDescriptionScreen extends AppCompatActivity {
         description = findViewById(R.id.product_description);
         addToCart = findViewById(R.id.to_cart);
         ratingBar = findViewById(R.id.rating);
+        cartBtn = findViewById(R.id.cart_btn);
+
+
+        cartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ItemDescriptionScreen.this, MyCartActivity.class));
+            }
+        });
+
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
+        price = intent.getStringExtra("price");
+        try{
+            image = intent.getStringExtra("image");
+        }catch (Exception ex){
+            image = "";
+
+        }
+
+        addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                cartItems.add(new BuyerProductsClass(image, name, price ));
+                MyCartActivity.total+= Float.parseFloat(price);
+                Toast.makeText(ItemDescriptionScreen.this, "Added to cart", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
         float rating = ratingBar.getRating();
         qty = findViewById(R.id.qty);

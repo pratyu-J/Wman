@@ -44,6 +44,13 @@ public class ProductListActivity extends AppCompatActivity {
         adapter = new ProductListAdapter(this, products);
         productList.setAdapter(adapter);
 
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductListActivity.this, MyCartActivity.class));
+            }
+        });
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {

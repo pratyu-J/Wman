@@ -50,9 +50,15 @@ public class BuyerHomeScreen extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         showDrawer = findViewById(R.id.show_drawer);
         searchView = findViewById(R.id.search);
-
+        cart = findViewById(R.id.cart);
         mode =  AppPreferences.loadPreferences(BuyerHomeScreen.this, "user_mode");
 
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BuyerHomeScreen.this, MyCartActivity.class));
+            }
+        });
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, new BuyerHomeFragment()).commit();
 

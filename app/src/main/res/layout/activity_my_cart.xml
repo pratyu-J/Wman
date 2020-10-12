@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MyCartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_btn"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_black"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:id="@+id/cart"
+        tools:listitem="@layout/saved_recycler_layout"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 3500"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/to_checkout"
+            android:text="Continue"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dark_blue_btn"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
