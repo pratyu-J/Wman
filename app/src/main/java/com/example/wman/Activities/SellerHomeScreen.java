@@ -26,6 +26,7 @@ import com.example.wman.Classes.AppPreferences;
 import com.example.wman.Fragments.SellerCategoryFragment;
 import com.example.wman.Fragments.SellerHomeFragment;
 import com.example.wman.Fragments.SellerProfileFragment;
+import com.example.wman.HelperChatBot.ChatScreenActivity;
 import com.example.wman.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -39,7 +40,7 @@ public class SellerHomeScreen extends AppCompatActivity {
     ImageButton showDrawer, cart;
     String mode = "Buyer";
 
-    LinearLayout profile, home, previousOrders, toCart, settings, buyProducts, logout, categories;
+    LinearLayout profile, assistant, previousOrders, toCart, settings, buyProducts, logout, categories;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,6 +92,13 @@ public class SellerHomeScreen extends AppCompatActivity {
             }
         });
 
+        assistant = findViewById(R.id.assistant);
+        assistant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SellerHomeScreen.this, ChatScreenActivity.class));
+            }
+        });
         logout = findViewById(R.id.Logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

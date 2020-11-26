@@ -23,4 +23,6 @@
     <color name="android_blue">#0c44bc</color>
     <color name="profile_back">#26214A</color>
     <color name="blacktrans"></color>
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_watbot">#ecf0f1</color>
 </resources>

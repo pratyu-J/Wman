@@ -24,6 +24,7 @@ import com.example.wman.Fragments.BuyerHomeFragment;
 import com.example.wman.Fragments.BuyerProfileFragment;
 import com.example.wman.Fragments.BuyerSavedFragment;
 import com.example.wman.Fragments.SellerHomeFragment;
+import com.example.wman.HelperChatBot.ChatScreenActivity;
 import com.example.wman.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -36,7 +37,7 @@ public class BuyerHomeScreen extends AppCompatActivity {
     private static String TAG = "BuyerHomeSc";
     ImageButton showDrawer, cart;
     String mode = "Buyer";
-    LinearLayout profile, home, previousOrders, toCart, settings, sellProducts, logout, categories;
+    LinearLayout profile, assistant, previousOrders, toCart, settings, sellProducts, logout, categories;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +86,14 @@ public class BuyerHomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(BuyerHomeScreen.this, "Coming Soon", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        assistant = findViewById(R.id.assistant_bot);
+        assistant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BuyerHomeScreen.this, ChatScreenActivity.class));
             }
         });
 
