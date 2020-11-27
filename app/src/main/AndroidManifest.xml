@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.wman">
+    package="com.Neuralsift.Sesvo">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,18 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelperChatBot.ChatScreenActivity"></activity>
-        <activity android:name=".Activities.CheckoutActivity" />
-        <activity android:name=".Activities.MyCartActivity" />
-        <activity android:name=".Activities.NextShareActivity" />
-        <activity android:name=".Activities.AddPost" />
-        <activity android:name=".Activities.SellerProductDetailsActivity" />
-        <activity android:name=".Activities.ProductListActivity" />
-        <activity android:name=".Activities.ItemDescriptionScreen" />
-        <activity android:name=".Activities.SplashScreen2" />
-        <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Activities.CreateAccount" />
-        <activity android:name=".Activities.SellerHomeScreen">
+        <activity android:name="com.Neuralsift.Sesvo.HelperChatBot.ChatScreenActivity"></activity>
+        <activity android:name="com.Neuralsift.Sesvo.Activities.CheckoutActivity" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.MyCartActivity" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.NextShareActivity" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.AddPost" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.SellerProductDetailsActivity" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.ProductListActivity" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.ItemDescriptionScreen" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.SplashScreen2" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.LoginActivity" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.CreateAccount" />
+        <activity android:name="com.Neuralsift.Sesvo.Activities.SellerHomeScreen">
 
             <!--
             <intent-filter>
@@ -35,7 +35,7 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".Activities.BuyerHomeScreen">
+        <activity android:name="com.Neuralsift.Sesvo.Activities.BuyerHomeScreen">
 
             <!--
             <intent-filter>
@@ -45,7 +45,7 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".Activities.SplashScreen">
+        <activity android:name="com.Neuralsift.Sesvo.Activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

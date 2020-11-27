@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BuySellDemo"
+                android:text="Sesvo"
                 android:layout_gravity="center_horizontal"
                 android:textSize="30sp"
                 android:layout_margin="10dp"/>
@@ -179,83 +179,6 @@
                     android:background="@color/grey"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    app:cardBackgroundColor="#263F72"
-                    app:cardCornerRadius="0dp"
-                    >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:text="f"
-                            android:textStyle="bold"
-                            android:textAlignment="center"
-                            android:textSize="40dp"
-                            android:gravity="center_horizontal" />
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <Button
-                    android:id="@+id/fb_signup_seller"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="Sign Up with Facebook"
-                    android:textColor="@color/white"
-                    android:layout_marginRight="20dp"
-
-                    android:background="#0C44BC"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-
-<!--                <androidx.cardview.widget.CardView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="0dp"
-                    app:cardPreventCornerOverlap="true"
-                    >
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/grey_outline"
-                        android:src="@drawable/ic_google"
-                        android:padding="8dp"/>
-
-                </androidx.cardview.widget.CardView>-->
-
-                <com.google.android.gms.common.SignInButton
-                    android:id="@+id/sign_in_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp"/>
-            </LinearLayout>
-
-
             <RelativeLayout
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
@@ -264,7 +187,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Already have an account?"
+                    android:text="You already have an account?"
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
                     android:layout_marginBottom="20dp"
